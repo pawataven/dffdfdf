@@ -1,0 +1,63 @@
+        <div class="container">
+            <button class="btn-1">
+               <a href="https://www.instagram.com/nct_dream/" >Instagram</a>
+           </button> 
+          
+           <button class="btn-1">
+                   <a href="https://twitter.com/NCTsmtown_DREAM" >Twitter</a>
+           </button>
+          
+          </div>
+          
+          <style>
+          
+              button{
+                text-decoration: none;
+                padding: 20px 50px;
+                font-size: 20px;    
+                cursor: pointer;
+                border: 0px;
+                background: transparent;
+                position: center;
+                margin: 20px;
+                transition: all 0.25s ease;
+                width: 13%;
+                    }
+          
+                .btn-1{
+                  background: #ffffff;
+                  color:#000000;
+                  border-radius: 30px;
+          
+                }
+                .btn-1:hover {
+                  transform: translate(-12px, -12px);
+                }
+                .btn-1:hover::before {
+                  transform: translate(6px, 6px);}
+          
+                .btn-1:hover::after {
+                  transform: translate(12px, 12px);}
+                 
+                .btn-1:hover::after, .btn-1:hover::before{
+                  content: "";
+                  position: absolute;
+                  opacity: 0.4;
+                  border-radius: inherit;
+                  background: #ffffff;
+                  width: 100%;
+                  height: 100%;
+                  left: 0;
+                  bottom: 0;
+                  z-index: -1;
+                  transition: all 0.25 ease;
+                }
+          
+                .container { 
+                    display: flex;
+                         justify-content: center;
+                         align-items: center;
+                        }
+          
+                     
+          </style>
